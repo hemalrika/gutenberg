@@ -1,0 +1,30 @@
+{
+	"apiVersion": 2,
+	"name": "blocks-course/firstblock",
+	"title": "First Block",
+	"description": "My First Block",
+	"category": "text",
+	"keywords" : ["text", "paragraph", "box"],
+	"textdomain": "firstblock",
+	"editorScript": "file:./build/index.js",
+	"style": "file:./build/style-index.css",
+	"editorStyle": "file:./build/index.css",
+	"attributes": {
+		"text": {
+			"type": "text",
+			"source": "html",
+			"selector": "h4",
+			"default": "some text"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "left"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string"
+		}
+	}
+}

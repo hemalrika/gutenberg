@@ -1,0 +1,83 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/rika-team-members",
+  "version": "0.1.0",
+  "title": "Rika Team Members",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false,
+    "align": [
+      "wide"
+    ]
+  },
+  "keywords": [
+    "team",
+    "team-members",
+    "testimonial",
+    "rika"
+  ],
+  "textdomain": "rika",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "columns": {
+      "type": "number",
+      "default": 2
+    }
+  },
+  "example": {
+    "attributes": {
+      "columns": 2
+    },
+    "innerBlocks": [
+      {
+        "name": "create-block/team-member",
+        "attributes": {
+          "name": "John DOE",
+          "bio": "Lorem ipsom dolor sit ammet. Lorem ipsom dolor sit ammet. Lorem ipsom dolor sit ammet. ",
+          "url": "https://picsum.photos/id/237/200/300",
+          "sociallinks": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com"
+            },
+            {
+              "icon": "twitter",
+              "link": "https://www.twitter.com"
+            },
+            {
+              "icon": "instagram",
+              "link": "https://www.instagram.com"
+            }
+          ]
+        }
+      },
+      {
+        "name": "create-block/team-member",
+        "attributes": {
+          "name": "MD hemal akhand",
+          "bio": "Lorem ipsom dolor sit ammet. Lorem ipsom dolor sit ammet. Lorem ipsom dolor sit ammet. ",
+          "url": "https://picsum.photos/id/322/200/300",
+          "sociallinks": [
+            {
+              "icon": "facebook",
+              "link": "https://www.facebook.com"
+            },
+            {
+              "icon": "twitter",
+              "link": "https://www.twitter.com"
+            },
+            {
+              "icon": "instagram",
+              "link": "https://www.instagram.com"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
